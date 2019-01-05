@@ -10,33 +10,43 @@
 
   <body>
   
-<h1 align = 'center'>Guessing Game</h1>
-<h2 align = 'center'>Guess a number between 1-100!</h2>
+<h1 >Guessing Game</h1>
+<h2 id= 'H2' align = 'center'>Guess a number between 1-100!</h2>
 
 <form action="/action_page.php" align= 'center'>
 Choose a number:<br>
-<input type="text" name="number" placeholder= 'Enter number here'>
-<input type="submit">
+</br>
+<input id='text' type="text" id= 'text' name="number" placeholder= 'Enter #'>
+
+
 </form>
-
-<h3 align = 'center'>Previous guesses:</h3>
-<ul align = 'center'>
+<div id='buttons' align= 'center'>
 <br>
-  <il align = 'center'><u>first</u> </il>
-</br>
-<br>  
-  <il align = 'center'><u>second</u> </il>
-  </br>
+<input type="submit" class ='buttonSubmit' id = 'submit'>
+<br>
+<input class = 'buttonHint' id='hint' type='submit' value='Get a hint'>
+<br>
+<input class = 'buttonReset' id ="reset" type="reset" value= "Reset game">
+</div>
+
+
+<div id= 'guesses'>
+<h3 align = 'center'> List of previous guesses:</h3>
+<ul align = 'center'>
+
+  <il id='first' >first </il>
   <br>
-  <il align = 'center'><u>third </u> </il>
-  </br>
-  <br>
-  <il align = 'center'><u>fourth </u></il>
-</br>
+<il id='second' >second  </il>
+<br>
+<il id='third' >third  </il>
+<br>
+<il id='fourth' >fourth </il>
+<br>
+<il id= 'fifth' align = 'center'>fifth </il>
 
 
-
-    <!-- <script src='js/guessing-game.js'></script> -->
+</div>
+    <script src='js/guessing-game.js'></script> 
     <!-- uncomment the script tag above when you are ready to add JavaScript to your document -->
   </body>
 
